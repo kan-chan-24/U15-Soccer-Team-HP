@@ -1,0 +1,71 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    background-color: #1f1f1f;
+}
+/* -header- */
+header{
+    font-weight: 700;
+    position: sticky; /*画面固定*/
+    top: 0; /*固定位置*/
+    background-color: #1f1f1f;
+    z-index: 3;
+}
+header .container{
+    max-width: 1280px; /*containerクラスの最大横幅*/
+    width: 90%;
+    margin: 0 auto; /* 上 | 左右 の余白*/
+}
+header .row{
+    /*ヘッダー項目を横並び　左右均等　上下中央寄せ*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+header .logo{
+    font-size: 24px;
+}
+header ul{
+    display: flex; /*リストの要素を横並び*/
+}
+header ul li{
+    margin-left: 30px; /*要素の左側に余白*/
+    font-size: 14px;
+    letter-spacing: 1px; /*文字間*/
+}
+/*　-top page-　*/
+.section1{
+    background-image: url(../img/top_page.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    height: 100vh; /*vh = 縦の画面幅いっぱい*/
+    display: flex; /*下部のalign-itemsを適用させる為に記述*/
+    align-items: center; /*margin内の中央に配置*/
+    z-index: 0;
+}
+.section1 .container{
+    color: #ffffff;
+    position: absolute;
+    bottom: 48px;
+    left: 36px;
+    z-index: 2;
+}
+.section1 h1{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 0.89;
+    max-width: 800px;
+    margin-bottom: 32px;
+}
+.section1 .jp{
+    font-size: 24px;
+}
+.section1 .filter{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    z-index:1;
+}
